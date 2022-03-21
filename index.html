@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="modal_active" class="modal_bg hidden">
+            <form id="form" class="modal">
+                <div class="modal__content-top">
+                    <h2 class="modal__text-title">Settings</h2>
+                    <button id="close_modal" class="button__close"><img src="assets/icons/xmark-solid.svg" alt="x mark"></button>
+                </div>
+                <div class="modal__content-center">
+                    <h3 class="modal__text-center">Time (Minutes)</h3>
+                    <div id="modal_block" class="modal_block hidden">
+                        <p class="advise__text">You cannot change the clock setting it while is working, you should press the button of below to put new settings to the clock.. UwU</p>
+                        <button class="advice__button" id="advise">Process stop</button>
+                    </div>
+                    <div class="modal__content-time">
+                        <span class="content__time-text">Work time</span>
+                        <input id="input" class="input__time" name="uwu" type="number" value="25">
+                    </div>
+                    <div class="modal__content-time">
+                        <span class="content__time-text">Rest time</span>
+                        <input id="input_res" class="input__time" name="uwu" type="number" value="5">
+                    </div> 
+                </div>
+                    <input id="boton" class="button_apply" type="button" value="Apply" for="uwu">
+            </form>
+        </div>
+        <h1 class="title">pomodoro</h1>
+        <div id="modal_pomodoro" class="pomodoro">
+            <div class="circle"></div>
+            <div class="info_pomodoro">
+                <p id="h1" class="pomodoro__text">00:00</p>
+                <button class="pomodoro__info-button" id="pause">pause</button>
+                <button class="pomodoro__info-button hidden" id="pauseRest">pause</button>
+            </div>
+        </div>
+        <a href="#" class="gear_icon" id="setting"><img src="assets/icons/gear-solid.svg" alt="gear icon"></a>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
